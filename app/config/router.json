@@ -1,0 +1,15 @@
+{
+    "root": "dev.NoSugarInOz",
+    "ways": [
+        {
+            "name": "home",
+            "path": "/",
+            "controller": "app:HomeController:index"
+        },
+        {
+            "name": "404",
+            "path": "/404/",
+            "controller": "app:ErrorController:error404"
+        }
+    ]
+}

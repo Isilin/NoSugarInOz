@@ -1,0 +1,10 @@
+{
+    "root": "dev.NoSugarInOz/dashboard",
+    "ways": [
+        {
+            "name": "home",
+            "path": "/",
+            "controller": "core:DashboardController:index"
+        }
+    ]
+}

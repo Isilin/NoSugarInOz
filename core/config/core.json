@@ -1,0 +1,9 @@
+{
+	"database": {
+		"driver": "mysqli",
+		"url": "localhost",
+		"port": "8080",
+		"login": "root",
+		"password": "root"
+	}
+} 

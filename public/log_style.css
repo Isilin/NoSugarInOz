@@ -1,0 +1,9 @@
+.log_info {
+	color: #00ff00;
+}
+.log_exception {
+	color: #ff0000;
+}
+.log_tagged {
+	color: #0000ff;
+}

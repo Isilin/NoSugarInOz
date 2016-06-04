@@ -1,0 +1,10 @@
+{
+    "root": "dev.NoSugarInOz",
+    "ways": [
+        {
+        	"name": "404",
+        	"path": "/404/",
+        	"controller": "core:ErrorController:error404"
+        }
+	]
+}

@@ -1,0 +1,19 @@
+# ===== Secure access to .htaccess file. =====
+<filesMatch "\.(htaccess|htpasswd|ini|class.php|fla|psd|log|sh)$">
+ Order Allow,Deny
+ Deny from all
+</filesMatch>
+
+# ===== Desactivate the server signature. =====
+ServerSignature Off
+
+# ===== Disable indexing pages and enable following of symbolic links. =====
+Options -Indexes +FollowSymLinks
+
+# ===== Rules of rewriting =====
+# ===== Images, stylesheets and js scripts are ignored. =====
+# ===== Every query is redirected to the index.php file. =====
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.(css|jpg|png|gif)$
+RewriteRule ^(.*)$ public/index.php/$1 [L]
